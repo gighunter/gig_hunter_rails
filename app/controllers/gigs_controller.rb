@@ -22,7 +22,7 @@ class GigsController < ApplicationController
   end
 
   private
-
+c
   def gigs_params
     params.require(:gig).permit(:location, :time, :description, :date, :group, :gig_poster_user_id, :venue, :pay, :services, :concert_dress, :style)
   end
