@@ -1,2 +1,0 @@
-class GigController < ApplicationController
-end
