@@ -16,17 +16,6 @@ alienFromLaserblast = User.create(first_name: "Alien", last_name: "Hominid", ema
 hokusai = User.create(first_name: "Katsushika", last_name: "Hokusai", email: 'hokusai@hokusai.com', password: 'hokusai', bio: '代表作に『富嶽三十六景』や『北斎漫画』があり、世界的にも著名な画家である。森羅万象を描き、生涯に3万点を超える作品を発表した。若い時から意欲的であり、版画のほか、肉筆浮世絵にも傑出していた。しかし、北斎の絵師としての地位は「富嶽三十六景」の発表により、不動のものとなっただけでなく、風景画にも新生面を開いた。', city:
 "Edo, Japan", img_url: 'https://cdn.filestackcontent.com/MCOUOcP0St9pKqNozjw0')
 #########CREATE GIGS###################
-t.string "location"
-t.string "time"
-t.text "description"
-t.date "date"
-t.string "group"
-t.integer "gig_poster_user_id"
-t.string "venue"
-t.integer "pay"
-t.integer "services"
-t.string "concert_dress"
-t.string "style"
 gig1 = Gig.create(location: '91 Claremont Avenue, New York City', time: "4:30", description: "Production of Marriage of Figaro. Musicians needed: 2 Violins, 1 Viola, 1 Cello, 1 Bass, 1 Oboe, 1 Bassoon, 1 Timpani. 6 Rehearsals (10/01, 10/02, 10/03, 10/08, 10/09, 10/12 all at 7:00 - 10:00 pm) and 3 performances (10/13 at 6:30 with a 6:00 call time and 10/14 Matinee at 12:00 with an 11:30 call and at 6:30 with a 6:00 call time).", date: "2018-05-14", group: 'New Amsterdam Opera', gig_poster_user_id: 1, venue: "Riverside Church", pay: 350, services: 6, concert_dress: 'All-Black', style: "Opera")
 gig2 = Gig.create(location: '46-02 Parsons Blvd Flushing NY 11355', time: "7:00", description: "Beethoven Symphony No.5, Grieg Piano Concerto, and Brahms Academic Festival Overture. Musicians needed: 5 Violins, 3 Violas, and a trumpet player. Dates: 11/4, 11/11, 11/18 at 7:00 - 10-00 and concert at 11/25 6:30 call for 7:00 show.", date: "2018-05-19", group: 'Queensboro Symphony Orchestra', gig_poster_user_id: 2, venue: "Saint Mary’s Nativity Church", pay: 125, services: 3, concert_dress: 'All-Black', style: "Classical")
 gig3 = Gig.create(location: '330 7th Avenue, 7th Floor, New York, NY 10001', time: "7:30", date: "2018-05-21", description: "Production of Handel's Messiah. Musicians Needed: 1 Bass, 2 Cellos, 2 Trumpets, and Timpani. 4 Rehearsals and 3 Performances. Rehearsal dates: 11/4, 11/5, 11/6,", group: 'New Amsterdam Opera', gig_poster_user_id: 2, venue: "Opera America", pay: 280, services: 3, concert_dress: 'All-Black', style: "Oratorio")
