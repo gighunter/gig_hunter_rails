@@ -1,4 +1,5 @@
 class Api::V1::UsersController < ApplicationController
+  skip_before_action :authenticate_request, only: [:create]
   def index
     @users = User.all
     render json: @users
@@ -10,13 +11,15 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(user_name)
+    @user = User.new(user_params)
+    @user.password = params[:password]
     @user.img_url = 'https://cdn.filestackcontent.com/ehIcNumRke6Mn1dp6kjA'
+    @user.save
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:email, :password, :city, :first_name, :last_name)
+    params.require(:user).permit(:email, :city, :first_name, :last_name)
   end
 end
