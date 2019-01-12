@@ -1,4 +1,4 @@
-class UserGigsController < ApplicationController
+class Api::V1::UserGigsController < ApplicationController
   def index
     render json: UserGig.all
   end
