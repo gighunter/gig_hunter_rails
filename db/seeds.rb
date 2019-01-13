@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+############CREATE USERS######################
 rick = User.create(first_name: "Rick", last_name: "Nilon", email: "rick@rick.com", password: 'rick', bio: "From Long Beach, NY", city: "New York, NY", img_url: 'https://cdn.filestackcontent.com/8e6rSzUkQwi7gewIKuR2')
 matt = User.create(first_name: "Matt", last_name: "Masiello", email: "matt@matt.com", password: 'matt', bio: "I am a classically trained musician from Long Island, NY. I am a multi-instrumentalist. In addition to classical music, I also really like vaporwave.", city: "Queens, NY", img_url: 'https://cdn.filestackcontent.com/91EI51PlRiKNiBZGeCVx')
 tommy = User.create(first_name: "Tommy", last_name: "Wiseau", email: 'tommy@tommy.com', password: 'tommy', bio: "Oh, that's very interesting story, when I moved to San Francisco with two suitcases and I didn't know anyone, and I have, I hit YMCA with a $2000 check that I couldn't cash. Well, because it was an out of state bank. Anyway, I was working as a busboy in hotel, and uh, um, she was sitting, drinking her coffee, and she was so beautiful, and I say hi to her, and that's how we met. Well, the interesting part is that on our first date, she paid for dinner. It’s bullshit, I did not hit her. I did nooot. Oh hi, Mark!  I cannot tell you; it's confidential. Ha ha ha. What a story, Mark. It seems to me that you're the expert, Mark. Hi, doggy.", city: "San Francisco", img_url: 'https://cdn.filestackcontent.com/Rc0TCk7VQOGIvydmGkBk')
@@ -38,29 +38,26 @@ tommy.gigs << gig1
 tommy.gigs << gig2
 rickSanchez.gigs << gig12
 rickSanchez.gigs << gig15
-
-
-# ##########CREATE INSTRUMENTS###########
-# guitar = Instrument.create(name: "Guitar")
-# koto = Instrument.create(name: "Koto")
-# shamisen = Instrument.create(name: 'Shamisen')
-# piano = Instrument.create(name: "Piano")
-# drumKit = Instrument.create(name: "Drum Kit")
-# violin = Instrument.create(name:'Violin')
-# uprightBass = Instrument.create(name: "Double Bass")
-# oboe = Instrument.create(name: "Oboe")
-# keyboard = Instrument.create(name: "Keyboard")
-#
-# ############CREATE USER INSTRUMENT ASSOCIATIONS###############
-# rick.instruments << guitar
-# rick.instruments << koto
-# matt.instruments << uprightBass
-# matt.instruments << piano
-# tommy.instruments << violin
-# tommy.instruments << oboe
-# ben.instruments << violin
-# rickSanchez.instruments << keyboard
-# hokusai.instruments << shamisen
-# hokusai.instruments << koto
-# alienFromLaserblast.instruments << guitar
-# kim.instruments << piano
+###########CREATE INSTRUMENTS###########
+guitar = Instrument.create(name: "Guitar")
+koto = Instrument.create(name: "Koto")
+shamisen = Instrument.create(name: 'Shamisen')
+piano = Instrument.create(name: "Piano")
+drumKit = Instrument.create(name: "Drum Kit")
+violin = Instrument.create(name:'Violin')
+uprightBass = Instrument.create(name: "Double Bass")
+oboe = Instrument.create(name: "Oboe")
+keyboard = Instrument.create(name: "Keyboard")
+#############CREATE USER INSTRUMENT ASSOCIATIONS###############
+rick.instruments << guitar
+rick.instruments << koto
+matt.instruments << uprightBass
+matt.instruments << piano
+tommy.instruments << violin
+tommy.instruments << oboe
+ben.instruments << violin
+rickSanchez.instruments << keyboard
+hokusai.instruments << shamisen
+hokusai.instruments << koto
+alienFromLaserblast.instruments << guitar
+kim.instruments << piano
