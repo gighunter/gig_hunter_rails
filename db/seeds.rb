@@ -10,9 +10,9 @@ rick = User.create(first_name: "Rick", last_name: "Nilon", email: "rick@rick.com
 matt = User.create(first_name: "Matt", last_name: "Masiello", email: "matt@matt.com", password: 'matt', bio: "I am a classically trained musician from Long Island, NY. I am a multi-instrumentalist. In addition to classical music, I also really like vaporwave.", city: "Queens, NY", img_url: 'https://cdn.filestackcontent.com/91EI51PlRiKNiBZGeCVx')
 tommy = User.create(first_name: "Tommy", last_name: "Wiseau", email: 'tommy@tommy.com', password: 'tommy', bio: "Oh, that's very interesting story, when I moved to San Francisco with two suitcases and I didn't know anyone, and I have, I hit YMCA with a $2000 check that I couldn't cash. Well, because it was an out of state bank. Anyway, I was working as a busboy in hotel, and uh, um, she was sitting, drinking her coffee, and she was so beautiful, and I say hi to her, and that's how we met. Well, the interesting part is that on our first date, she paid for dinner. It’s bullshit, I did not hit her. I did nooot. Oh hi, Mark!  I cannot tell you; it's confidential. Ha ha ha. What a story, Mark. It seems to me that you're the expert, Mark. Hi, doggy.", city: "San Francisco", img_url: 'https://cdn.filestackcontent.com/Rc0TCk7VQOGIvydmGkBk')
 ben = User.create(first_name: 'Ben', last_name: "Matare", email: 'ben@ben.com', password: 'ben', bio: "Im from Ohio. I like to be a weeb and eat Bacon egg and cheese every day.", city: 'New York', img_url: 'https://cdn.filestackcontent.com/TOIbFsI6TJyfJMVYw10f')
-rickSanchez = User.create(first_name: "Rick", last_name: "Sanchez", email: 'rickSanchez@rick.com', password: 'rick', bio: "I'm a grandfather with two grandkids. I'm also a mad scientist. Wubba-lubba-dub-dub!!!!!!!!!!!!!!", city: "Seattle, WA", img_url: 'https://cdn.filestackcontent.com/7sd9W22XQSiOQZlVvzMu')
+rick_sanchez = User.create(first_name: "Rick", last_name: "Sanchez", email: 'rickSanchez@rick.com', password: 'rick', bio: "I'm a grandfather with two grandkids. I'm also a mad scientist. Wubba-lubba-dub-dub!!!!!!!!!!!!!!", city: "Seattle, WA", img_url: 'https://cdn.filestackcontent.com/7sd9W22XQSiOQZlVvzMu')
 kim = User.create(first_name: "Nicholas", last_name: "Cage", email: 'cagey@cage.com', password: 'nicholas', bio: "I'm the worlds greatest actor. I've starred in such films as National Treasure 2 and Vampire's Kiss.", city: "Las Vegas, NV", img_url: 'https://cdn.filestackcontent.com/PRzwTERERuCHCSEhiGub')
-alienFromLaserblast = User.create(first_name: "Alien", last_name: "Hominid", email: 'alien@alien.com', password: 'alien', bio: '復讐者」. 復讐者」.伯母さん 復讐者」. 復讐者」. 復讐者」. 復讐者」. 第八章 第十章 第七章 第九章 第二章.復讐者」 伯母さん. .伯母さん 復讐者」. 第十四章 第十六章 第十三章 第十九章 第十五章 第十二章. 復讐者」 . 第十八章 第十九章 第十七章 第十六章 第十五章 第十二章. 第十四章 第十八章 第十七章 第十六章 第十二章 第十三章. 第十七章 第十六章 第十九章 第十五章 第十二章. 復讐者」', city: "???", img_url: 'https://cdn.filestackcontent.com/sDe3YJ8pSNynF2bVS468')
+alien_from_laserblast = User.create(first_name: "Alien", last_name: "Hominid", email: 'alien@alien.com', password: 'alien', bio: '復讐者」. 復讐者」.伯母さん 復讐者」. 復讐者」. 復讐者」. 復讐者」. 第八章 第十章 第七章 第九章 第二章.復讐者」 伯母さん. .伯母さん 復讐者」. 第十四章 第十六章 第十三章 第十九章 第十五章 第十二章. 復讐者」 . 第十八章 第十九章 第十七章 第十六章 第十五章 第十二章. 第十四章 第十八章 第十七章 第十六章 第十二章 第十三章. 第十七章 第十六章 第十九章 第十五章 第十二章. 復讐者」', city: "???", img_url: 'https://cdn.filestackcontent.com/sDe3YJ8pSNynF2bVS468')
 hokusai = User.create(first_name: "Katsushika", last_name: "Hokusai", email: 'hokusai@hokusai.com', password: 'hokusai', bio: '代表作に『富嶽三十六景』や『北斎漫画』があり、世界的にも著名な画家である。森羅万象を描き、生涯に3万点を超える作品を発表した。若い時から意欲的であり、版画のほか、肉筆浮世絵にも傑出していた。しかし、北斎の絵師としての地位は「富嶽三十六景」の発表により、不動のものとなっただけでなく、風景画にも新生面を開いた。', city:
 "Edo, Japan", img_url: 'https://cdn.filestackcontent.com/MCOUOcP0St9pKqNozjw0')
 #########CREATE GIGS###################
@@ -36,28 +36,70 @@ rick.gigs << gig1
 matt.gigs << gig1
 tommy.gigs << gig1
 tommy.gigs << gig2
-rickSanchez.gigs << gig12
-rickSanchez.gigs << gig15
+rick_sanchez.gigs << gig12
+rick_sanchez.gigs << gig15
 ###########CREATE INSTRUMENTS###########
-guitar = Instrument.create(name: "Guitar")
-koto = Instrument.create(name: "Koto")
-shamisen = Instrument.create(name: 'Shamisen')
-piano = Instrument.create(name: "Piano")
-drumKit = Instrument.create(name: "Drum Kit")
-violin = Instrument.create(name:'Violin')
-uprightBass = Instrument.create(name: "Double Bass")
-oboe = Instrument.create(name: "Oboe")
-keyboard = Instrument.create(name: "Keyboard")
+
+##CLASSICAL##
+  ##woodwinds##
+  flute = Instrument.create(name: "Flute")
+  oboe = Instrument.create(name: "Oboe")
+  english_horn = Instrument.create(name: "English Horn")
+  clarinet = Instrument.create(name: "Clarinet")
+  bass_clarinet = Instrument.create(name: "Bass Clarinet")
+  bassoon = Instrument.create(name: "Bassoon")
+  contra_basson = Instrument.create(name: "Contra Bassoon")
+
+  ##brass##
+  french_horn = Instrument.create(name: "French Horn")
+  c_trumpet = Instrument.create(name: "C Trumpet")
+  b_flat_trumpet = Instrument.create(name: "B♭ Trumpet")
+  tenor_trombone = Instrument.create(name: "Tenor Trombone")
+  bass_trombone = Instrument.create(name: "Bass Trombone")
+  alto_trombone = Instrument.create(name: "Alto Trombone")
+  tuba = Instrument.create(name: "Tuba")
+
+  ##strings##
+  violin = Instrument.create(name: "Violin")
+  viola = Instrument.create(name: "Viola")
+  cello = Instrument.create(name: "Cello")
+  double_bass = Instrument.create(name: "Double Bass")
+  harp =  Instrument.create(name: "Harp")
+
+  ##percussion##
+    ##unpitched percussion##
+      snare_drum = Instrument.create(name: "Snare Drum")
+      bass_drum = Instrument.create(name: "Bass Drum")
+      triangle = Instrument.create(name: "Triangle")
+      crash_cymbals =  Instrument.create(name: "Crash Cymbals")
+      suspended_cymbal = Instrument.create(name: "Suspended Cymbal")
+      tam_tam = Instrument.create(name: "Tam Tam")
+    ##pitched percussion##
+      timpani = Instrument.create(name: "Timpani")
+      marimba =  Instrument.create(name: "Marimba")
+      vibraphone =  Instrument.create(name: "Vibraphone")
+      xylophone = Instrument.create(name: "Xylophone")
+# "♯"
+  ##choral##
+    choral_soprano = Instrument.create(name: "Choral Soprano")
+    choral_alto = Instrument.create(name: "Choral Alto")
+    choral_tenor = Instrument.create(name: "Choral Tenor")
+    choral_bass = Instrument.create(name: "Choral Bass")
+  ##other##
+  guitar = Instrument.create(name: "Guitar")
+  koto = Instrument.create(name: "Koto")
+  shamisen = Instrument.create(name: 'Shamisen')
+  piano = Instrument.create(name: "Piano")
 #############CREATE USER INSTRUMENT ASSOCIATIONS###############
 rick.instruments << guitar
 rick.instruments << koto
-matt.instruments << uprightBass
+matt.instruments << double_bass
 matt.instruments << piano
 tommy.instruments << violin
 tommy.instruments << oboe
 ben.instruments << violin
-rickSanchez.instruments << keyboard
+rick_sanchez.instruments << piano
 hokusai.instruments << shamisen
 hokusai.instruments << koto
-alienFromLaserblast.instruments << guitar
+alien_from_laserblast.instruments << guitar
 kim.instruments << piano
